@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Eventos | Conectando el Ecosistema de Eventos en LATAM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.1), transparent),
+                        radial-gradient(circle at bottom left, rgba(168, 85, 247, 0.05), transparent);
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-bold text-2xl">S</div>
+                    <span class="font-extrabold text-xl tracking-tight uppercase">Super <span class="text-indigo-600">Eventos</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#problema" class="hover:text-indigo-600 transition">El Problema</a>
+                    <a href="#solucion" class="hover:text-indigo-600 transition">La Solución</a>
+                    <a href="#modelo" class="hover:text-indigo-600 transition">Negocio</a>
+                    <a href="#oportunidad" class="bg-indigo-600 text-white px-5 py-2 rounded-full hover:bg-indigo-700 transition">Ser Socio</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 md:pt-48 md:pb-32 hero-bg">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-indigo-600 uppercase bg-indigo-50 rounded-full">
+                Próximo Unicornio Logístico en LATAM
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
+                La plataforma que conecta el <br>
+                <span class="gradient-text">ecosistema de eventos</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-xl text-slate-600 mb-10 leading-relaxed">
+                Super Eventos es el primer marketplace B2B que centraliza a organizadores, patrocinadores, proveedores e influencers en un solo lugar.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#oportunidad" class="px-8 py-4 bg-indigo-600 text-white rounded-xl font-bold shadow-xl hover:bg-indigo-700 transition transform hover:scale-105">
+                    Oportunidad de Socio
+                </a>
+                <a href="#solucion" class="px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-xl font-bold hover:bg-slate-50 transition">
+                    Ver Propuesta de Valor
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- The Problem Section -->
+    <section id="problema" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">El problema que nadie ha resuelto</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-lg">Organizar un evento profesional hoy depende de tres cosas: contactos, tiempo y suerte. En LATAM, el mercado está totalmente fragmentado.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 card-hover">
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Patrocinio Invisible</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Llamadas en frío y emails sin respuesta. No hay un lugar público para ver qué buscan las marcas.</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 card-hover">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Proveedores Opacos</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Contratación vía WhatsApp o boca a boca. Imposible comparar precios o ver reputación real.</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 card-hover">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Métricas Nulas</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Se paga a influencers por alcance inflado que no convierte. Cero trazabilidad en ventas de entradas.</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 card-hover">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Riesgo Financiero</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Pagos informales, transferencias bancarias y conflictos de fondos retenidos.</p>
+                </div>
+            </div>
+
+            <div class="mt-20 glass p-8 md:p-12 rounded-[2rem] border border-slate-200">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 italic text-indigo-600">"No es una app de gestión, es la infraestructura que faltaba."</h3>
+                        <p class="text-slate-600 text-lg">Un organizador típico pierde entre <strong>60 y 120 horas</strong> coordinando el ecosistema antes de que el evento exista. Automatizamos el negocio, no solo el checklist.</p>
+                    </div>
+                    <div class="bg-indigo-600 rounded-2xl p-8 text-white">
+                        <div class="text-4xl font-extrabold mb-2">$15,000 M+</div>
+                        <div class="text-indigo-100 mb-6 uppercase tracking-widest text-xs">Mercado LATAM Anual</div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center text-sm border-b border-indigo-500 pb-2">
+                                <span>Eficiencia de Tiempo</span>
+                                <span class="font-bold">+85%</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm border-b border-indigo-500 pb-2">
+                                <span>Seguridad de Pagos</span>
+                                <span class="font-bold">100%</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm">
+                                <span>Costo Infraestructura</span>
+                                <span class="font-bold">Escalable $0-$200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution / Actors -->
+    <section id="solucion" class="py-24 bg-slate-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Infraestructura 360°</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Para Organizadores -->
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <span class="text-indigo-600 font-bold uppercase text-xs tracking-widest">Marketplace</span>
+                        <h3 class="text-3xl font-extrabold mt-2 mb-6 text-slate-800 underline decoration-indigo-200">Organizadores</h3>
+                        <ul class="space-y-4 text-slate-600">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-indigo-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Publicación de <strong>Tiers de Patrocinio</strong> configurables.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-indigo-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Directorio de <strong>Proveedores Verificados</strong> con portafolio real.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-indigo-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Gestión de influencers con <strong>códigos de referidos</strong> automáticos.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Para Patrocinadores -->
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <span class="text-indigo-600 font-bold uppercase text-xs tracking-widest">Inversión</span>
+                        <h3 class="text-3xl font-extrabold mt-2 mb-6 text-slate-800 underline decoration-indigo-200">Patrocinadores</h3>
+                        <ul class="space-y-4 text-slate-600">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-indigo-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Explorar catálogo de eventos con <strong>datos de audiencia</strong> reales.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-indigo-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Anonimato hasta la aprobación para evitar spam.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-indigo-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Pagos vía <strong>Stripe con Escrow</strong> de 3 días post-validación.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Differentials (Escrow Focus) -->
+    <section class="py-24 bg-indigo-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-1">
+                    <h2 class="text-4xl font-extrabold mb-6">Confianza Programada</h2>
+                    <p class="text-indigo-200 text-lg mb-8 leading-relaxed">Eliminamos la incertidumbre financiera. Cada centavo está protegido por nuestra tecnología de Escrow.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 bg-indigo-800/50 p-4 rounded-xl border border-indigo-700">
+                            <div class="font-bold text-2xl text-indigo-300 italic">01</div>
+                            <div class="text-sm">El patrocinador paga vía Stripe</div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-indigo-800/50 p-4 rounded-xl border border-indigo-700">
+                            <div class="font-bold text-2xl text-indigo-300 italic">02</div>
+                            <div class="text-sm">Fondo retenido de forma segura</div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-indigo-800/50 p-4 rounded-xl border border-indigo-700">
+                            <div class="font-bold text-2xl text-indigo-300 italic">03</div>
+                            <div class="text-sm">Liquidación rápida tras validación</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 grid md:grid-cols-2 gap-8">
+                    <div class="p-8 bg-white/10 rounded-3xl border border-white/10">
+                        <h4 class="font-bold text-xl mb-4">Calificaciones Verificadas</h4>
+                        <p class="text-indigo-100 text-sm">Solo quienes colaboran pueden calificar. Transparencia total sin reseñas falsas.</p>
+                    </div>
+                    <div class="p-8 bg-white/10 rounded-3xl border border-white/10">
+                        <h4 class="font-bold text-xl mb-4">Tiers de Patrocinio</h4>
+                        <p class="text-indigo-100 text-sm">Estructuras Gold, Silver y Platinum dinámicas con beneficios automáticos.</p>
+                    </div>
+                    <div class="p-8 bg-white/10 rounded-3xl border border-white/10">
+                        <h4 class="font-bold text-xl mb-4">Módulo Influencers</h4>
+                        <p class="text-indigo-100 text-sm">Dashboard de clics, conversiones y ganancias en tiempo real para aliados.</p>
+                    </div>
+                    <div class="p-8 bg-white/10 rounded-3xl border border-white/10">
+                        <h4 class="font-bold text-xl mb-4">Infraestructura</h4>
+                        <p class="text-indigo-100 text-sm">Next.js 14, Firestore y Firebase Cloud Functions para escalabilidad infinita.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Model Section -->
+    <section id="modelo" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Modelo de Negocio</h2>
+                <p class="text-slate-500">Ganamos cuando nuestros usuarios ganan. Sin suscripciones fijas.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-20">
+                <div class="p-8 border border-slate-100 rounded-3xl text-center bg-slate-50">
+                    <div class="text-indigo-600 text-4xl font-extrabold mb-2">10%</div>
+                    <div class="font-bold text-slate-800 mb-2">Patrocinios y Servicios</div>
+                    <p class="text-slate-500 text-sm">Pagado por el patrocinador u organizador según la transacción.</p>
+                </div>
+                <div class="p-8 border border-indigo-200 rounded-3xl text-center bg-indigo-50 transform scale-105 shadow-xl">
+                    <div class="text-indigo-600 text-4xl font-extrabold mb-2">5%</div>
+                    <div class="font-bold text-slate-800 mb-2">Venta de Entradas</div>
+                    <p class="text-slate-500 text-sm">Comisión estándar por ticket vendido a través de la plataforma.</p>
+                </div>
+                <div class="p-8 border border-slate-100 rounded-3xl text-center bg-slate-50">
+                    <div class="text-indigo-600 text-4xl font-extrabold mb-2">2-15%</div>
+                    <div class="font-bold text-slate-800 mb-2">Comisión Influencers</div>
+                    <p class="text-slate-500 text-sm">Organizador define el %; Super Eventos cobra sobre el total.</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 rounded-[3rem] p-8 md:p-16 text-white">
+                <h3 class="text-2xl font-bold mb-8 text-center">Ejemplo: Evento Corporativo Mediano</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center p-6 border-r border-slate-800">
+                        <div class="text-slate-400 text-xs uppercase tracking-widest mb-2">Patrocinios</div>
+                        <div class="text-2xl font-bold text-indigo-400">$18,000</div>
+                        <div class="text-xs text-slate-500 mt-2">Comisión: $1,800</div>
+                    </div>
+                    <div class="text-center p-6 border-r border-slate-800">
+                        <div class="text-slate-400 text-xs uppercase tracking-widest mb-2">Servicios</div>
+                        <div class="text-2xl font-bold text-indigo-400">$12,000</div>
+                        <div class="text-xs text-slate-500 mt-2">Comisión: $1,200</div>
+                    </div>
+                    <div class="text-center p-6 border-r border-slate-800">
+                        <div class="text-slate-400 text-xs uppercase tracking-widest mb-2">Tickets</div>
+                        <div class="text-2xl font-bold text-indigo-400">$8,000</div>
+                        <div class="text-xs text-slate-500 mt-2">Comisión: $400</div>
+                    </div>
+                    <div class="text-center p-6 bg-indigo-600 rounded-2xl shadow-lg">
+                        <div class="text-indigo-100 text-xs uppercase tracking-widest mb-2 font-bold">Ganancia Neta</div>
+                        <div class="text-3xl font-extrabold">$3,400</div>
+                        <div class="text-xs text-indigo-200 mt-2">Por un solo evento</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fases de Lanzamiento -->
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Hoja de Ruta del MVP (12 Semanas)</h2>
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex-1 bg-white p-6 rounded-2xl shadow-sm border-l-4 border-indigo-500">
+                    <span class="text-indigo-600 font-bold text-sm">Fase 1 (Semanas 1-3)</span>
+                    <h4 class="font-bold mt-2">Core Foundation</h4>
+                    <p class="text-slate-500 text-sm mt-2">Auth, Roles, Dashboards y CRUD de eventos público.</p>
+                </div>
+                <div class="flex-1 bg-white p-6 rounded-2xl shadow-sm border-l-4 border-indigo-400">
+                    <span class="text-indigo-600 font-bold text-sm">Fase 2 (Semanas 4-6)</span>
+                    <h4 class="font-bold mt-2">Marketplace</h4>
+                    <p class="text-slate-500 text-sm mt-2">Solicitudes de patrocinio y marketplace de servicios.</p>
+                </div>
+                <div class="flex-1 bg-white p-6 rounded-2xl shadow-sm border-l-4 border-indigo-300">
+                    <span class="text-indigo-600 font-bold text-sm">Fase 3 (Semanas 7-9)</span>
+                    <h4 class="font-bold mt-2">Payments</h4>
+                    <p class="text-slate-500 text-sm mt-2">Stripe PaymentIntent, Escrow y liquidaciones.</p>
+                </div>
+                <div class="flex-1 bg-white p-6 rounded-2xl shadow-sm border-l-4 border-indigo-200">
+                    <span class="text-indigo-600 font-bold text-sm">Fase 4 (Semanas 10-12)</span>
+                    <h4 class="font-bold mt-2">Lanzamiento</h4>
+                    <p class="text-slate-500 text-sm mt-2">Módulo Influencers, Tickets y Panel Admin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opportunity Section -->
+    <section id="oportunidad" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="bg-indigo-600 rounded-[3rem] p-12 md:p-20 text-white text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-8">Únete como Socio Fundador</h2>
+                <p class="text-indigo-100 text-xl max-w-3xl mx-auto mb-12">Buscamos socios estratégicos con red de contactos o capital semilla para acelerar el desarrollo y liderar el mercado en RD, Colombia y México.</p>
+                
+                <div class="grid md:grid-cols-2 gap-12 text-left mb-16">
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold underline decoration-indigo-400">¿Qué buscamos?</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-indigo-300 rounded-full"></div>
+                                <span>Red de contactos en marcas o agencias.</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-indigo-300 rounded-full"></div>
+                                <span>Capital para acelerar el ciclo de ventas.</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-2 h-2 bg-indigo-300 rounded-full"></div>
+                                <span>Experiencia en ventas B2B o gestión comercial.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold underline decoration-indigo-400">Próximos Pasos</h4>
+                        <ol class="space-y-4 list-decimal list-inside text-indigo-50">
+                            <li>Presentación del demo funcional.</li>
+                            <li>Revisión del modelo financiero detallado.</li>
+                            <li>Estructura de participación y Equity.</li>
+                            <li>Firma de NDA y acceso al repositorio.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="bg-white/10 p-10 rounded-3xl inline-block border border-white/20">
+                    <p class="text-sm font-semibold uppercase tracking-widest text-indigo-200 mb-2">Contacto Directo</p>
+                    <a href="mailto:jonathanvallezamora@gmail.com" class="text-2xl md:text-3xl font-bold break-all hover:text-indigo-200 transition underline underline-offset-8">
+                        jonathanvallezamora@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">S</div>
+                <span class="font-bold text-lg uppercase tracking-tight">Super <span class="text-indigo-600">Eventos</span></span>
+            </div>
+            <div class="text-slate-400 text-sm">
+                © 2024 Super Eventos. Conectando el ecosistema de eventos en LATAM.
+            </div>
+            <div class="flex gap-6 text-slate-400">
+                <a href="#" class="hover:text-indigo-600 transition">LinkedIn</a>
+                <a href="#" class="hover:text-indigo-600 transition">GitHub</a>
+                <a href="#" class="hover:text-indigo-600 transition">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Animaciones simples al hacer scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
